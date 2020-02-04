@@ -1,0 +1,17 @@
+{
+  "name": "kooz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name kooz --log ../logs/app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop kooz"
+  },
+  "dependencies": {
+    "pm2": "^4.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
